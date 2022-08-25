@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Homework2</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/styles.css" />
+  </head>
+
+  <body>
+    <!-- Шапка сайта -->
+    <header class="header container">
+      <nav class="navigation">
+        <a class="logo" href="./index.html"
+          ><span class="logo-blue">Web</span>Studio</a
+        >
+        <ul class="navigation-list list">
+          <li class="navigation-item">
+            <a class="navigation-link current-link" href="index.html">Студия</a>
+          </li>
+          <li class="navigation-item">
+            <a class="navigation-link" href="./portfolio.html">Портфолио</a>
+          </li>
+          <li class="navigation-item">
+            <a class="navigation-link" href="/">Контакты</a>
+          </li>
+        </ul>
+      </nav>
+      <ul class="contacts-list list">
+        <li class="contacts-item">
+          <a href="moilto:info@devstudio.com">info@devstudio.com</a>
+        </li>
+        <li class="contacts-item">
+          <a href="tel:+380961111111">+38 096 111 11 11</a>
+        </li>
+      </ul>
+    </header>
+    <!-- Заголовок -->
+    <main>
+      <section class="subscribe container">
+        <div class="subscribe__block"></div>
+        <h2 class="subscribe__title">Subscribe To Get Special Offers</h2>
+        <p class="subscribe__desc">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
+          varius enim in eros elementum tristique.
+        </p>
+        <form>
+          <div class="subscribe__mail">
+            <input
+              class="subscribe__input"
+              type="email"
+              name="email"
+              placeholder="Enter your email"
+              id="user_email"
+            />
+
+            <button class="subscribe__button" type="submit">Subscribe</button>
+          </div>
+        </form>
+
+        <picture>
+          <source
+            media="(min-width: 1280px)"
+            srcset="
+              ./images/banan@1x_desctop.png 1x,
+              ./images/banan@2x_desctop.png 2x
+            "
+          />
+
+          <source
+            media="(min-width: 768px)"
+            srcset="
+              ./images/banan@1x_tablet.png 1x,
+              ./images/banan@2x_tablet.png 2x
+            "
+          />
+
+          <source
+            media="(max-width: 767px)"
+            srcset="
+              ./images/banan@1x_mobile.png 1x,
+              ./images/banan@2x_mobile.png 2x
+            "
+          />
+
+          <img
+            class="subscribe__img"
+            src="./images/banan@1x_mobile.png"
+            alt="Banana"
+          />
+        </picture>
+        <!-- <picture>
+          <source
+            srcset="
+              ./images/banan@1x_mobile.png 1x,
+              ./images/banan@2x_mobile.png 2x
+            "
+            type="image/png"
+            media="(max-width: 767px)"
+          />
+          <img src="./images/banan@1x_mobile.png" alt="Banana" />
+
+          <source
+            srcset="
+              ./images/banan@1x_tablet.png 1x,
+              ./images/banan@2x_tablet.png 2x
+            "
+            type="image/png"
+            media="(min-width: 768px)"
+          />
+          <img src="./images/banan@1x_tablet.png" alt="Banana" />
+
+          <source
+            srcset="
+              ./images/banan@1x_desctop.png 1x,
+              ./images/banan@2x_desctop.png 2x
+            "
+            type="image/png"
+            media="(min-width: 1280px)"
+          />
+          <img src="./images/banan@1x_desctop.png" alt="Banana" />
+        </picture> -->
+      </section>
+    </main>
+    <!-- Подвал сайта -->
+    <footer class="footer container">
+      <a href="./index.html" class="footer-logo"
+        ><span class="logo-blue">Web</span>Studio</a
+      >
+      <address class="footer-address">
+        <ul class="address-list list">
+          <li class="address-item">
+            <a
+              class="address-link"
+              href="https://goo.gl/maps/X2jcXpadv5ityZMy6"
+              target="_blank"
+              rel="nofollow noopener noreferrer"
+              >г. Киев, пр-т Леси Украинки, 26</a
+            >
+          </li>
+          <li class="address-item">
+            <a class="address-link-contacts" href="moilto:info@devstudio.com"
+              >info@devstudio.com</a
+            >
+          </li>
+          <li class="address-item">
+            <a class="address-link-contacts" href="tel:+380961111111"
+              >+38 096 111 11 11</a
+            >
+          </li>
+        </ul>
+      </address>
+    </footer>
+  </body>
+</html>
